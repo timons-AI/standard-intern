@@ -5,7 +5,7 @@ export default function Home() {
         Standard Intern Pro
       </p>
       <p className=' text-4xl font-extrabold bg-clip-text bg-gradient-to-r from-orange-400 to-rose-500 text-transparent capitalize'>
-        This place is about to get funcky.
+        The Standard Corporation.
       </p>
 
     </main>
