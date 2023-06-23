@@ -8,7 +8,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-red-400 font-bold text-4xl mt-10 bg-gradient-to-r from-red-400 to-pink-400 text-white py-2 px-4 rounded-lg">
+      <h1 className="text-red-400 font-bold text-4xl mt-10 bg-red-400 text-white py-2 px-4 rounded-lg">
         Standard Intern
       </h1>
 
@@ -32,7 +32,7 @@ const Home = () => {
       <h2 className="text-gray-800 font-bold text-xl mt-8">Most Popular</h2>
 
       <div className="flex overflow-x-auto mt-5">
-        <div className="flex-shrink-0 bg-gradient-to-r from-yellow-400 to-green-400 h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-white rounded-lg p-3 mx-2">
           <img
             src="/images/dev.png"
             alt="Software Developer"
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-shrink-0 bg-gradient-to-r from-blue-400 to-indigo-400 h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-white rounded-lg p-3 mx-2">
           <img
             src="/images/accountant.png"
             alt="Accountant"
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-shrink-0 bg-gradient-to-r from-purple-400 to-indigo-400 h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-white rounded-lg p-3 mx-2">
           <img
             src="/images/driver.png"
             alt="Car Driver"
@@ -90,7 +90,7 @@ const Home = () => {
       <h2 className="text-gray-800 font-bold text-xl mt-8">Nearby jobs</h2>
 
       <div className="mt-5">
-        <div className="bg-gradient-to-r from-red-400 to-pink-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company1_logo.png"
             alt="Company Logo"
@@ -110,7 +110,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-gradient-to-r from-yellow-400 to-green-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company2_logo.png"
             alt="Company Logo"
@@ -130,7 +130,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-400 to-indigo-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company3_logo.png"
             alt="Company Logo"
@@ -150,7 +150,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-gradient-to-r from-yellow-400 to-green-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company4_logo.png"
             alt="Company Logo"
