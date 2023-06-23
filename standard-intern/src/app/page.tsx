@@ -41,12 +41,16 @@ const Home = () => {
           <div className="flex flex-col mt-4">
             <div className="text-gray-700 font-bold text-lg">Software Developer</div>
             <div className="text-blue-700 font-bold mt-1">Full time</div>
+            <div className="text-gray-700 mt-1">Company: ABC Inc.</div>
             <div className="text-gray-700 mt-1">Location: San Francisco</div>
             <div className="text-gray-700 mt-1">People Needed: 5</div>
             <div className="text-gray-700 font-bold mt-auto">$50/h</div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-              Apply
-            </button>
+            <div className="flex justify-end">
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+                Apply
+              </button>
+              <div className="text-gray-700 font-bold ml-2 mt-4">$50/h</div>
+            </div>
           </div>
         </div>
 
@@ -59,12 +63,16 @@ const Home = () => {
           <div className="flex flex-col mt-4">
             <div className="text-gray-700 font-bold text-lg">Accountant</div>
             <div className="text-gray-700 font-bold mt-1">Full time</div>
+            <div className="text-gray-700 mt-1">Company: XYZ Corp.</div>
             <div className="text-gray-700 mt-1">Location: New York</div>
             <div className="text-gray-700 mt-1">People Needed: 3</div>
             <div className="text-gray-700 font-bold mt-auto">$50/h</div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-              Apply
-            </button>
+            <div className="flex justify-end">
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+                Apply
+              </button>
+              <div className="text-gray-700 font-bold ml-2 mt-4">$50/h</div>
+            </div>
           </div>
         </div>
 
@@ -77,12 +85,16 @@ const Home = () => {
           <div className="flex flex-col mt-4">
             <div className="text-gray-700 font-bold text-lg">Car driver</div>
             <div className="text-blue-700 font-bold mt-1">Full time</div>
+            <div className="text-gray-700 mt-1">Company: XYZ Corp.</div>
             <div className="text-gray-700 mt-1">Location: Los Angeles</div>
             <div className="text-gray-700 mt-1">People Needed: 2</div>
             <div className="text-gray-700 font-bold mt-auto">$50/h</div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-              Apply
-            </button>
+            <div className="flex justify-end">
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+                Apply
+              </button>
+              <div className="text-gray-700 font-bold ml-2 mt-4">$50/h</div>
+            </div>
           </div>
         </div>
       </div>
@@ -98,15 +110,18 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Graphic Designer</div>
-            <div className="flex items-center mt-1">
+            <div className="text-gray-700 font-bold mt-1">Company: ABC Inc.</div>
+            <div className="text-gray-700 font-bold mt-1">Location: London</div>
+            <div className="text-gray-700 font-bold mt-1">People Needed: 3</div>
+            <div className="flex justify-end items-center mt-1">
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
               <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end ml-4">
+                Apply
+              </button>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
-              Apply
-            </button>
           </div>
         </div>
 
@@ -118,15 +133,18 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Nurse</div>
-            <div className="flex items-center mt-1">
+            <div className="text-gray-700 font-bold mt-1">Company: XYZ Healthcare</div>
+            <div className="text-gray-700 font-bold mt-1">Location: New York</div>
+            <div className="text-gray-700 font-bold mt-1">People Needed: 5</div>
+            <div className="flex justify-end items-center mt-1">
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
               <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end ml-4">
+                Apply
+              </button>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
-              Apply
-            </button>
           </div>
         </div>
 
@@ -138,15 +156,18 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Chef</div>
-            <div className="flex items-center mt-1">
+            <div className="text-gray-700 font-bold mt-1">Company: Gourmet Cuisine</div>
+            <div className="text-gray-700 font-bold mt-1">Location: Paris</div>
+            <div className="text-gray-700 font-bold mt-1">People Needed: 2</div>
+            <div className="flex justify-end items-center mt-1">
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
               <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end ml-4">
+                Apply
+              </button>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
-              Apply
-            </button>
           </div>
         </div>
 
@@ -158,15 +179,18 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Baby Sitter</div>
-            <div className="flex items-center mt-1">
+            <div className="text-gray-700 font-bold mt-1">Company: Happy Families</div>
+            <div className="text-gray-700 font-bold mt-1">Location: Sydney</div>
+            <div className="text-gray-700 font-bold mt-1">People Needed: 3</div>
+            <div className="flex justify-end items-center mt-1">
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
               <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end ml-4">
+                Apply
+              </button>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
-              Apply
-            </button>
           </div>
         </div>
       </div>
