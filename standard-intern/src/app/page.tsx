@@ -8,10 +8,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-red-400 font-bold text-4xl mt-10 py-2 px-4 rounded-lg">
+      <h1 className="text-red-400 font-bold text-4xl mt-10 py-2 px-4 rounded-lg text-center">
   Standard Intern
 </h1>
-
 
       <h2 className="text-gray-800 font-bold text-2xl mt-5">Find your best places</h2>
 
