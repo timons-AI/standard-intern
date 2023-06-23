@@ -91,7 +91,12 @@ const Home = () => {
 
       <div className="mt-5">
         <div className="bg-white rounded-lg flex items-center p-5 mt-3">
-          <div className="flex-1">
+          <img
+            src="/images/company1_logo.png"
+            alt="Company Logo"
+            className="w-16 h-16 rounded-full"
+          />
+          <div className="flex-1 ml-5">
             <div className="font-bold text-xl">Graphic Designer</div>
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: ABC Designs</div>
@@ -107,7 +112,12 @@ const Home = () => {
         </div>
 
         <div className="bg-white rounded-lg flex items-center p-5 mt-3">
-          <div className="flex-1">
+          <img
+            src="/images/company2_logo.png"
+            alt="Company Logo"
+            className="w-16 h-16 rounded-full"
+          />
+          <div className="flex-1 ml-5">
             <div className="font-bold text-xl">Nurse</div>
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: XYZ Healthcare</div>
@@ -123,7 +133,12 @@ const Home = () => {
         </div>
 
         <div className="bg-white rounded-lg flex items-center p-5 mt-3">
-          <div className="flex-1">
+          <img
+            src="/images/company3_logo.png"
+            alt="Company Logo"
+            className="w-16 h-16 rounded-full"
+          />
+          <div className="flex-1 ml-5">
             <div className="font-bold text-xl">Chef</div>
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: Foodie Delights</div>
@@ -139,7 +154,12 @@ const Home = () => {
         </div>
 
         <div className="bg-white rounded-lg flex items-center p-5 mt-3">
-          <div className="flex-1">
+          <img
+            src="/images/company4_logo.png"
+            alt="Company Logo"
+            className="w-16 h-16 rounded-full"
+          />
+          <div className="flex-1 ml-5">
             <div className="font-bold text-xl">Baby Sitter</div>
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: Tiny Tots Care</div>
