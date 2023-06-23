@@ -8,7 +8,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-red-400 font-bold text-4xl mt-10 bg-gradient-to-r from-red-400 to-pink-400 text-white py-2 px-4 rounded-lg">
+      <h1 className="text-red-400 font-bold text-4xl mt-10  text-black py-2 px-4 rounded-lg">
         Standard Intern
       </h1>
 
@@ -16,11 +16,11 @@ const Home = () => {
 
       <div className="bg-gray-200 rounded-md p-2 flex items-center mt-5">
         <input
-          className="font-bold text-xl flex-1 py-1 px-2 border-none outline-none bg-gray-200 text-black"
+          className="font-bold text-xl flex-1 py-1 px-2 border-none outline-none bg-white text-black"
           type="text"
           placeholder="What are you looking for?"
         />
-        <button className="bg-blue-400 w-8 h-8 rounded-md flex items-center justify-center">
+        <button className="bg-black w-8 h-8 rounded-md flex items-center justify-center">
           <img
             src="/images/search.png"
             alt="Search"
@@ -44,7 +44,7 @@ const Home = () => {
             <div className="text-gray-800 mt-1">Location: San Francisco</div>
             <div className="text-gray-800 mt-1">People Needed: 5</div>
             <div className="text-gray-800 font-bold mt-auto">$50/h</div>
-            <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg">
+            <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
           </div>
@@ -62,7 +62,7 @@ const Home = () => {
             <div className="text-gray-800 mt-1">Location: New York</div>
             <div className="text-gray-800 mt-1">People Needed: 3</div>
             <div className="text-gray-800 font-bold mt-auto">$50/h</div>
-            <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg">
+            <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
           </div>
@@ -80,7 +80,7 @@ const Home = () => {
             <div className="text-gray-800 mt-1">Location: Los Angeles</div>
             <div className="text-gray-800 mt-1">People Needed: 2</div>
             <div className="text-gray-800 font-bold mt-auto">$50/h</div>
-            <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg">
+            <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
           </div>
@@ -105,7 +105,7 @@ const Home = () => {
               <div className="text-gray-800 font-bold mt-1">$5/h</div>
             </div>
           </div>
-          <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
+          <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg ml-auto">
             Apply
           </button>
         </div>
@@ -125,7 +125,7 @@ const Home = () => {
               <div className="text-gray-800 font-bold mt-1">$10/h</div>
             </div>
           </div>
-          <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
+          <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg ml-auto">
             Apply
           </button>
         </div>
@@ -145,7 +145,7 @@ const Home = () => {
               <div className="text-gray-800 font-bold mt-1">$8/h</div>
             </div>
           </div>
-          <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
+          <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg ml-auto">
             Apply
           </button>
         </div>
@@ -165,7 +165,7 @@ const Home = () => {
               <div className="text-gray-800 font-bold mt-1">$6/h</div>
             </div>
           </div>
-          <button className="bg-blue-400 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
+          <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg ml-auto">
             Apply
           </button>
         </div>
