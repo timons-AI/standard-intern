@@ -32,7 +32,7 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Most Popular</h2>
 
       <div className="flex justify-between mt-5">
-        <div className="bg-white h-96 w-72 rounded-lg p-3">
+        <div className="bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/dev.png"
             alt="Software Developer"
@@ -43,14 +43,14 @@ const Home = () => {
             <div className="text-blue-700 font-bold mt-1">Full time</div>
             <div className="text-gray-700 mt-1">Location: San Francisco</div>
             <div className="text-gray-700 mt-1">People Needed: 5</div>
-            <div className="text-gray-700 font-bold mt-1">$50/h</div>
+            <div className="text-gray-700 font-bold mt-auto">$50/h</div>
             <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
           </div>
         </div>
 
-        <div className="bg-white h-96 w-72 rounded-lg p-3">
+        <div className="bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/accountant.png"
             alt="Accountant"
@@ -61,14 +61,14 @@ const Home = () => {
             <div className="text-gray-700 font-bold mt-1">Full time</div>
             <div className="text-gray-700 mt-1">Location: New York</div>
             <div className="text-gray-700 mt-1">People Needed: 3</div>
-            <div className="text-gray-700 font-bold mt-1">$50/h</div>
+            <div className="text-gray-700 font-bold mt-auto">$50/h</div>
             <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
           </div>
         </div>
 
-        <div className="bg-white h-96 w-72 rounded-lg p-3">
+        <div className="bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/driver.png"
             alt="Car Driver"
@@ -79,7 +79,7 @@ const Home = () => {
             <div className="text-blue-700 font-bold mt-1">Full time</div>
             <div className="text-gray-700 mt-1">Location: Los Angeles</div>
             <div className="text-gray-700 mt-1">People Needed: 2</div>
-            <div className="text-gray-700 font-bold mt-1">$50/h</div>
+            <div className="text-gray-700 font-bold mt-auto">$50/h</div>
             <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
@@ -90,7 +90,7 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Nearby jobs</h2>
 
       <div className="mt-5">
-        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/pentool.png"
             alt="Graphic Designer"
@@ -98,17 +98,19 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Graphic Designer</div>
-            <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
-              <span className="text-gray-700 font-bold">Part time</span>
+            <div className="flex items-center mt-1">
+              <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
+                <span className="text-gray-700 font-bold">Part time</span>
+              </div>
+              <div className="text-gray-700 font-bold ml-2">$5/h</div>
             </div>
-            <div className="text-gray-700 font-bold mt-1">$5/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+              Apply
+            </button>
           </div>
-          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-            Apply
-          </button>
         </div>
 
-        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/add.png"
             alt="Nurse"
@@ -116,17 +118,19 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Nurse</div>
-            <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
-              <span className="text-gray-700 font-bold">Part time</span>
+            <div className="flex items-center mt-1">
+              <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
+                <span className="text-gray-700 font-bold">Part time</span>
+              </div>
+              <div className="text-gray-700 font-bold ml-2">$5/h</div>
             </div>
-            <div className="text-gray-700 font-bold mt-1">$5/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+              Apply
+            </button>
           </div>
-          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-            Apply
-          </button>
         </div>
 
-        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/dine.png"
             alt="Chef"
@@ -134,17 +138,19 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Chef</div>
-            <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
-              <span className="text-gray-700 font-bold">Part time</span>
+            <div className="flex items-center mt-1">
+              <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
+                <span className="text-gray-700 font-bold">Part time</span>
+              </div>
+              <div className="text-gray-700 font-bold ml-2">$5/h</div>
             </div>
-            <div className="text-gray-700 font-bold mt-1">$5/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+              Apply
+            </button>
           </div>
-          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-            Apply
-          </button>
         </div>
 
-        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/sitter.png"
             alt="Baby Sitter"
@@ -152,14 +158,16 @@ const Home = () => {
           />
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Baby Sitter</div>
-            <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
-              <span className="text-gray-700 font-bold">Part time</span>
+            <div className="flex items-center mt-1">
+              <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
+                <span className="text-gray-700 font-bold">Part time</span>
+              </div>
+              <div className="text-gray-700 font-bold ml-2">$5/h</div>
             </div>
-            <div className="text-gray-700 font-bold mt-1">$5/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+              Apply
+            </button>
           </div>
-          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
-            Apply
-          </button>
         </div>
       </div>
     </div>
