@@ -32,7 +32,7 @@ const Home = () => {
       <h2 className="text-gray-800 font-bold text-xl mt-8">Most Popular</h2>
 
       <div className="flex overflow-x-auto mt-5">
-        <div className="flex-shrink-0 bg-yellow-400 h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/dev.png"
             alt="Software Developer"
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-shrink-0 bg-blue-400 h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/accountant.png"
             alt="Accountant"
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-shrink-0 bg-purple-400 h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/driver.png"
             alt="Car Driver"
