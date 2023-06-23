@@ -32,54 +32,57 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Most Popular</h2>
 
       <div className="flex justify-between mt-5">
-        <div className="bg-white h-72 w-44 rounded-lg">
+        <div className="bg-white h-96 w-72 rounded-lg p-3">
           <img
             src="/images/dev.png"
             alt="Software Developer"
-            className="w-40 h-40"
+            className="w-16 h-16 rounded-full"
           />
-          <div className="bg-blue-500 h-16 rounded-b-lg p-2">
-            <div className="text-white font-bold text-sm">Software Developer</div>
-            <div className="flex items-center mt-1">
-              <div className="bg-blue-700 rounded-md p-1">
-                <span className="text-white font-bold">Full time</span>
-              </div>
-              <div className="ml-auto text-gray-700 font-bold">$50/h</div>
-            </div>
+          <div className="flex flex-col mt-4">
+            <div className="text-gray-700 font-bold text-lg">Software Developer</div>
+            <div className="text-blue-700 font-bold mt-1">Full time</div>
+            <div className="text-gray-700 mt-1">Location: San Francisco</div>
+            <div className="text-gray-700 mt-1">People Needed: 5</div>
+            <div className="text-gray-700 font-bold mt-1">$50/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+              Apply
+            </button>
           </div>
         </div>
 
-        <div className="bg-white h-72 w-44 rounded-lg">
+        <div className="bg-white h-96 w-72 rounded-lg p-3">
           <img
             src="/images/accountant.png"
             alt="Accountant"
-            className="w-40 h-40"
+            className="w-16 h-16 rounded-full"
           />
-          <div className="bg-blue-500 h-16 rounded-b-lg p-2">
-            <div className="text-white font-bold text-sm">Accountant</div>
-            <div className="flex items-center mt-1">
-              <div className="bg-blue-300 rounded-md p-1">
-                <span className="text-gray-700 font-bold">Full time</span>
-              </div>
-              <div className="ml-auto text-gray-700 font-bold">$50/h</div>
-            </div>
+          <div className="flex flex-col mt-4">
+            <div className="text-gray-700 font-bold text-lg">Accountant</div>
+            <div className="text-gray-700 font-bold mt-1">Full time</div>
+            <div className="text-gray-700 mt-1">Location: New York</div>
+            <div className="text-gray-700 mt-1">People Needed: 3</div>
+            <div className="text-gray-700 font-bold mt-1">$50/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+              Apply
+            </button>
           </div>
         </div>
 
-        <div className="bg-white h-72 w-44 rounded-lg">
+        <div className="bg-white h-96 w-72 rounded-lg p-3">
           <img
             src="/images/driver.png"
             alt="Car Driver"
-            className="w-40 h-40"
+            className="w-16 h-16 rounded-full"
           />
-          <div className="bg-blue-500 h-16 rounded-b-lg p-2">
-            <div className="text-white font-bold text-sm">Car driver</div>
-            <div className="flex items-center mt-1">
-              <div className="bg-blue-300 rounded-md p-1">
-                <span className="text-gray-700 font-bold">Full time</span>
-              </div>
-              <div className="ml-auto text-gray-700 font-bold">$50/h</div>
-            </div>
+          <div className="flex flex-col mt-4">
+            <div className="text-gray-700 font-bold text-lg">Car driver</div>
+            <div className="text-blue-700 font-bold mt-1">Full time</div>
+            <div className="text-gray-700 mt-1">Location: Los Angeles</div>
+            <div className="text-gray-700 mt-1">People Needed: 2</div>
+            <div className="text-gray-700 font-bold mt-1">$50/h</div>
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+              Apply
+            </button>
           </div>
         </div>
       </div>
@@ -87,7 +90,7 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Nearby jobs</h2>
 
       <div className="mt-5">
-        <div className="bg-white rounded-lg h-16 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
           <img
             src="/images/pentool.png"
             alt="Graphic Designer"
@@ -102,7 +105,7 @@ const Home = () => {
           <div className="ml-auto text-gray-700 font-bold">$5/h</div>
         </div>
 
-        <div className="bg-white rounded-lg h-16 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
           <img
             src="/images/add.png"
             alt="Nurse"
@@ -117,7 +120,7 @@ const Home = () => {
           <div className="ml-auto text-gray-700 font-bold">$5/h</div>
         </div>
 
-        <div className="bg-white rounded-lg h-16 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
           <img
             src="/images/dine.png"
             alt="Chef"
@@ -132,7 +135,7 @@ const Home = () => {
           <div className="ml-auto text-gray-700 font-bold">$5/h</div>
         </div>
 
-        <div className="bg-white rounded-lg h-16 flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
           <img
             src="/images/sitter.png"
             alt="Baby Sitter"
