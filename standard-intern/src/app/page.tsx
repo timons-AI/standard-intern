@@ -96,13 +96,16 @@ const Home = () => {
             alt="Graphic Designer"
             className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center"
           />
-          <div className="ml-5">
+          <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Graphic Designer</div>
             <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
               <span className="text-gray-700 font-bold">Part time</span>
             </div>
+            <div className="text-gray-700 font-bold mt-1">$5/h</div>
           </div>
-          <div className="ml-auto text-gray-700 font-bold">$5/h</div>
+          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+            Apply
+          </button>
         </div>
 
         <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
@@ -111,13 +114,16 @@ const Home = () => {
             alt="Nurse"
             className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center"
           />
-          <div className="ml-5">
+          <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Nurse</div>
             <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
               <span className="text-gray-700 font-bold">Part time</span>
             </div>
+            <div className="text-gray-700 font-bold mt-1">$5/h</div>
           </div>
-          <div className="ml-auto text-gray-700 font-bold">$5/h</div>
+          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+            Apply
+          </button>
         </div>
 
         <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
@@ -126,13 +132,16 @@ const Home = () => {
             alt="Chef"
             className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center"
           />
-          <div className="ml-5">
+          <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Chef</div>
             <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
               <span className="text-gray-700 font-bold">Part time</span>
             </div>
+            <div className="text-gray-700 font-bold mt-1">$5/h</div>
           </div>
-          <div className="ml-auto text-gray-700 font-bold">$5/h</div>
+          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+            Apply
+          </button>
         </div>
 
         <div className="bg-white rounded-lg h-20 flex items-center p-5 mt-3">
@@ -141,13 +150,16 @@ const Home = () => {
             alt="Baby Sitter"
             className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center"
           />
-          <div className="ml-5">
+          <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Baby Sitter</div>
             <div className="bg-gray-300 rounded-md w-20 flex items-center mt-1 p-1">
               <span className="text-gray-700 font-bold">Part time</span>
             </div>
+            <div className="text-gray-700 font-bold mt-1">$5/h</div>
           </div>
-          <div className="ml-auto text-gray-700 font-bold">$5/h</div>
+          <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg">
+            Apply
+          </button>
         </div>
       </div>
     </div>
