@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const Home = () => {
   return (
-    <div className="bg-gray-200 p-5">
+    <div className="bg-gray-900 text-white p-5">
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,9 +14,9 @@ const Home = () => {
 
       <h2 className="text-gray-700 font-bold text-2xl mt-5">Find your best places</h2>
 
-      <div className="bg-white rounded-md p-2 flex items-center mt-5">
+      <div className="bg-gray-800 rounded-md p-2 flex items-center mt-5">
         <input
-          className="font-bold text-xl flex-1 py-1 px-2 border-none outline-none"
+          className="font-bold text-xl flex-1 py-1 px-2 border-none outline-none bg-gray-800 text-white"
           type="text"
           placeholder="What are you looking for?"
         />
@@ -32,7 +32,7 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Most Popular</h2>
 
       <div className="flex overflow-x-auto mt-5">
-        <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-gradient-to-r from-red-500 to-yellow-500 h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/dev.png"
             alt="Software Developer"
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-gradient-to-r from-green-500 to-blue-500 h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/accountant.png"
             alt="Accountant"
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+        <div className="flex-shrink-0 bg-gradient-to-r from-purple-500 to-indigo-500 h-96 w-72 rounded-lg p-3 mx-2">
           <img
             src="/images/driver.png"
             alt="Car Driver"
@@ -90,7 +90,7 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Nearby jobs</h2>
 
       <div className="mt-5">
-        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-gradient-to-r from-pink-500 to-red-500 rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company1_logo.png"
             alt="Company Logo"
@@ -110,7 +110,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-gradient-to-r from-yellow-500 to-green-500 rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company2_logo.png"
             alt="Company Logo"
@@ -130,7 +130,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company3_logo.png"
             alt="Company Logo"
@@ -150,7 +150,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-gradient-to-r from-yellow-500 to-green-500 rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company4_logo.png"
             alt="Company Logo"
