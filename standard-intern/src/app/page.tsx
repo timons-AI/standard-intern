@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const Home = () => {
   return (
-    <div className="bg-gray-100 text-black p-5" style={{ backgroundColor: "#111726" }}>
+    <div className="bg-gradient-to-b from-gray-200 to-gray-100 text-black p-5">
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -90,7 +90,7 @@ const Home = () => {
       <h2 className="text-gray-800 font-bold text-xl mt-8">Nearby jobs</h2>
 
       <div className="mt-5">
-        <div className="bg-red-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company1_logo.png"
             alt="Company Logo"
@@ -110,7 +110,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-yellow-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company2_logo.png"
             alt="Company Logo"
@@ -130,7 +130,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-blue-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company3_logo.png"
             alt="Company Logo"
@@ -150,7 +150,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="bg-yellow-400 rounded-lg flex items-center p-5 mt-3">
+        <div className="bg-white rounded-lg flex items-center p-5 mt-3">
           <img
             src="/images/company4_logo.png"
             alt="Company Logo"
