@@ -8,9 +8,11 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-gray-700 font-bold text-3xl mt-10">Hello Brad</h1>
+      <h1 className="text-blue-500 font-bold text-4xl mt-10 bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-4 rounded-lg">
+        Standard Intern
+      </h1>
 
-      <h2 className="text-gray-700 font-bold text-2xl mt-3">Find your best jobs</h2>
+      <h2 className="text-gray-700 font-bold text-2xl mt-5">Find your best places</h2>
 
       <div className="bg-white rounded-md p-2 flex items-center mt-5">
         <input
@@ -18,7 +20,7 @@ const Home = () => {
           type="text"
           placeholder="What are you looking for?"
         />
-        <button className="bg-black w-8 h-8 rounded-md flex items-center justify-center">
+        <button className="bg-blue-500 w-8 h-8 rounded-md flex items-center justify-center">
           <img
             src="/images/search.png"
             alt="Search"
@@ -30,16 +32,16 @@ const Home = () => {
       <h2 className="text-gray-700 font-bold text-xl mt-8">Most Popular</h2>
 
       <div className="flex justify-between mt-5">
-        <div className="bg-white h-60 w-40 rounded-lg">
+        <div className="bg-white h-72 w-44 rounded-lg">
           <img
             src="/images/dev.png"
             alt="Software Developer"
             className="w-40 h-40"
           />
-          <div className="bg-black h-16 rounded-b-lg p-2">
+          <div className="bg-blue-500 h-16 rounded-b-lg p-2">
             <div className="text-white font-bold text-sm">Software Developer</div>
             <div className="flex items-center mt-1">
-              <div className="bg-gray-800 rounded-md p-1">
+              <div className="bg-blue-700 rounded-md p-1">
                 <span className="text-white font-bold">Full time</span>
               </div>
               <div className="ml-auto text-gray-700 font-bold">$50/h</div>
@@ -47,16 +49,16 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-white h-60 w-40 rounded-lg">
+        <div className="bg-white h-72 w-44 rounded-lg">
           <img
             src="/images/accountant.png"
             alt="Accountant"
             className="w-40 h-40"
           />
-          <div className="bg-black h-16 rounded-b-lg p-2">
+          <div className="bg-blue-500 h-16 rounded-b-lg p-2">
             <div className="text-white font-bold text-sm">Accountant</div>
             <div className="flex items-center mt-1">
-              <div className="bg-gray-300 rounded-md p-1">
+              <div className="bg-blue-300 rounded-md p-1">
                 <span className="text-gray-700 font-bold">Full time</span>
               </div>
               <div className="ml-auto text-gray-700 font-bold">$50/h</div>
@@ -64,16 +66,16 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-white h-60 w-40 rounded-lg">
+        <div className="bg-white h-72 w-44 rounded-lg">
           <img
             src="/images/driver.png"
             alt="Car Driver"
             className="w-40 h-40"
           />
-          <div className="bg-black h-16 rounded-b-lg p-2">
+          <div className="bg-blue-500 h-16 rounded-b-lg p-2">
             <div className="text-white font-bold text-sm">Car driver</div>
             <div className="flex items-center mt-1">
-              <div className="bg-gray-300 rounded-md p-1">
+              <div className="bg-blue-300 rounded-md p-1">
                 <span className="text-gray-700 font-bold">Full time</span>
               </div>
               <div className="ml-auto text-gray-700 font-bold">$50/h</div>
