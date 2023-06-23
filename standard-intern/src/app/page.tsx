@@ -99,12 +99,13 @@ const Home = () => {
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Graphic Designer</div>
             <div className="flex items-center mt-1">
+              <div className="text-gray-700 font-bold mr-2">Company: ABC Designs</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
               <div className="text-gray-700 font-bold ml-2">$5/h</div>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
               Apply
             </button>
           </div>
@@ -119,12 +120,13 @@ const Home = () => {
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Nurse</div>
             <div className="flex items-center mt-1">
+              <div className="text-gray-700 font-bold mr-2">Company: XYZ Healthcare</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <div className="text-gray-700 font-bold ml-2">$10/h</div>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
               Apply
             </button>
           </div>
@@ -139,12 +141,13 @@ const Home = () => {
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Chef</div>
             <div className="flex items-center mt-1">
+              <div className="text-gray-700 font-bold mr-2">Company: Foodie Delights</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <div className="text-gray-700 font-bold ml-2">$8/h</div>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
               Apply
             </button>
           </div>
@@ -159,12 +162,13 @@ const Home = () => {
           <div className="ml-5 flex-1">
             <div className="font-bold text-xl">Baby Sitter</div>
             <div className="flex items-center mt-1">
+              <div className="text-gray-700 font-bold mr-2">Company: Tiny Tots Care</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
                 <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <div className="text-gray-700 font-bold ml-2">$6/h</div>
             </div>
-            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg self-end">
+            <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
               Apply
             </button>
           </div>
