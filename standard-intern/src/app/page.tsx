@@ -101,9 +101,8 @@ const Home = () => {
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: ABC Designs</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
-                <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$5/h</div>
+              <div className="text-gray-700 font-bold mt-auto">$5/h</div>
             </div>
           </div>
           <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
@@ -122,9 +121,8 @@ const Home = () => {
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: XYZ Healthcare</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
-                <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$10/h</div>
+              <div className="text-gray-700 font-bold mt-auto">$10/h</div>
             </div>
           </div>
           <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
@@ -143,9 +141,8 @@ const Home = () => {
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: Foodie Delights</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
-                <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$8/h</div>
+              <div className="text-gray-700 font-bold mt-auto">$8/h</div>
             </div>
           </div>
           <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
@@ -164,9 +161,8 @@ const Home = () => {
             <div className="flex items-center mt-1">
               <div className="text-gray-700 font-bold mr-2">Company: Tiny Tots Care</div>
               <div className="bg-gray-300 rounded-md flex items-center px-2 py-1">
-                <span className="text-gray-700 font-bold">Part time</span>
               </div>
-              <div className="text-gray-700 font-bold ml-2">$6/h</div>
+              <div className="text-gray-700 font-bold mt-auto">$6/h</div>
             </div>
           </div>
           <button className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-lg ml-auto">
