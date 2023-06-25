@@ -8,11 +8,12 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="card">
-  <h1 className="text-black text-shadow-md font-bold text-4xl mt-10 py-2 px-4 rounded-lg text-center">
-    <span className="gradient-orange">Standard Intern</span>
-  </h1>
-</div>
+      <div className="card bg-gradient-diagonal-orange rounded-lg overflow-hidden shadow-lg">
+        <h1 className="text-black text-shadow-md font-bold text-4xl mt-10 py-2 px-4 text-center">
+          <span className="text-white">Standard Intern</span>
+        </h1>
+      </div>
+
 
 
       <h2 className="text-gray-800 font-bold text-2xl mt-5">Find your best places</h2>
