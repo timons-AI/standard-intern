@@ -84,6 +84,7 @@ const Home = () => {
               Apply
             </button>
           </div>
+          </div>
 
 <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
   <img
@@ -173,7 +174,6 @@ const Home = () => {
       Apply
     </button>
   </div> 
-    </div>
       </div>
       </div>
       <h2 className="text-gray-800 font-bold text-xl mt-8">Nearby jobs</h2>
