@@ -15,7 +15,7 @@ import { get } from 'http'
 //     company_regions     company_regions[]
 //   }
   
-export async function getRegions(company_id: number){
+ async function getRegions(company_id: number){
     const regions = await db.company_regions.findMany({
         where: {company_id: company_id},
         include: {regions: true}
@@ -23,14 +23,14 @@ export async function getRegions(company_id: number){
     return regions
 }
 
-export async function getCompanies(){
+ async function getCompanies(){
     const companies = await db.companies.findMany()
     // const regions = await db.company_regions.findMany()
     
     return companies
 }
 
-export async function getCompany(company_id: number){
+ async function getCompany(company_id: number){
     const company = await db.companies.findUnique({
         where: {company_id: company_id},
         include: {company_regions: true , company_professions: true}
