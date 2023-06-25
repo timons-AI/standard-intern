@@ -15,7 +15,7 @@ const Home = () => {
 </div>
 
 
-      <h2 className="text-gray-800 font-bold text-2xl mt-5">Find your best places</h2>
+      <h2 className="text-gray-800 font-bold text-2xl mt-5">Find new opportunities</h2>
 
       <div className="bg-gray-200 rounded-md p-2 flex items-center mt-5">
         <input
