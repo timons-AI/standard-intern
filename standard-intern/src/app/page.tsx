@@ -169,6 +169,107 @@ const Home = () => {
             Apply
           </button>
         </div>
+        
+        <div className="flex flex-col mt-4">
+    <div className="text-gray-800 font-bold text-lg">Graphic Designer</div>
+    <div className="text-blue-600 font-bold mt-1">Part time</div>
+    <div className="text-gray-800 mt-1">Location: Chicago</div>
+    <div className="text-gray-800 mt-1">People Needed: 2</div>
+    <div className="text-gray-800 font-bold mt-auto">$40/h</div>
+    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
+      Apply
+    </button>
+  </div>
+</div>
+
+<div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+  <img
+    src="/images/marketing.png"
+    alt="Marketing Specialist"
+    className="w-16 h-16 rounded-full"
+  />
+  <div className="flex flex-col mt-4">
+    <div className="text-gray-800 font-bold text-lg">Marketing Specialist</div>
+    <div className="text-gray-800 font-bold mt-1">Full time</div>
+    <div className="text-gray-800 mt-1">Location: London</div>
+    <div className="text-gray-800 mt-1">People Needed: 4</div>
+    <div className="text-gray-800 font-bold mt-auto">$45/h</div>
+    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
+      Apply
+    </button>
+  </div>
+</div>
+
+<div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+  <img
+    src="/images/teacher.png"
+    alt="Teacher"
+    className="w-16 h-16 rounded-full"
+  />
+  <div className="flex flex-col mt-4">
+    <div className="text-gray-800 font-bold text-lg">Teacher</div>
+    <div className="text-blue-600 font-bold mt-1">Full time</div>
+    <div className="text-gray-800 mt-1">Location: Sydney</div>
+    <div className="text-gray-800 mt-1">People Needed: 3</div>
+    <div className="text-gray-800 font-bold mt-auto">$55/h</div>
+    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
+      Apply
+    </button>
+  </div>
+</div>
+
+<div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+  <img
+    src="/images/writer.png"
+    alt="Content Writer"
+    className="w-16 h-16 rounded-full"
+  />
+  <div className="flex flex-col mt-4">
+    <div className="text-gray-800 font-bold text-lg">Content Writer</div>
+    <div className="text-gray-800 font-bold mt-1">Part time</div>
+    <div className="text-gray-800 mt-1">Location: Toronto</div>
+    <div className="text-gray-800 mt-1">People Needed: 2</div>
+    <div className="text-gray-800 font-bold mt-auto">$35/h</div>
+    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
+      Apply
+    </button>
+  </div>
+</div>
+
+<div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+  <img
+    src="/images/nurse.png"
+    alt="Registered Nurse"
+    className="w-16 h-16 rounded-full"
+  />
+  <div className="flex flex-col mt-4">
+    <div className="text-gray-800 font-bold text-lg">Registered Nurse</div>
+    <div className="text-blue-600 font-bold mt-1">Full time</div>
+    <div className="text-gray-800 mt-1">Location: Melbourne</div>
+    <div className="text-gray-800 mt-1">People Needed: 5</div>
+    <div className="text-gray-800 font-bold mt-auto">$60/h</div>
+    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
+      Apply
+    </button>
+  </div>
+</div>
+
+<div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
+  <img
+    src="/images/chef.png"
+    alt="Chef"
+    className="w-16 h-16 rounded-full"
+  />
+  <div className="flex flex-col mt-4">
+    <div className="text-gray-800 font-bold text-lg">Chef</div>
+    <div className="text-gray-800 font-bold mt-1">Full time</div>
+    <div className="text-gray-800 mt-1">Location: Paris</div>
+    <div className="text-gray-800 mt-1">People Needed: 4</div>
+    <div className="text-gray-800 font-bold mt-auto">$50/h</div>
+    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
+      Apply
+    </button>
+  </div>
       </div>
     </div>
   );
