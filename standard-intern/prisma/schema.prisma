@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model companies {
+  company_id          Int                   @id(map: "pk_companies") @default(autoincrement())
+  name                String                @db.VarChar(100)
+  description         String?
+  address             String?               @db.VarChar(100)
+  contact             String?               @db.VarChar
+  company_professions company_professions[]
+  company_regions     company_regions[]
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model company_professions {
+  company_profession_id Int         @id(map: "pk_company_professions") @default(autoincrement())
+  company_id            Int
+  profession_id         Int
+  companies             companies   @relation(fields: [company_id], references: [company_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_company_professions")
+  professions           professions @relation(fields: [profession_id], references: [profession_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_company_professions_regions")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model company_regions {
+  company_region_id Int       @id(map: "pk_company_regions") @default(autoincrement())
+  company_id        Int
+  region_id         Int
+  companies         companies @relation(fields: [company_id], references: [company_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_company_regions_companies")
+  regions           regions   @relation(fields: [region_id], references: [region_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_company_regions_regions")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model professions {
+  profession_id       Int                   @id(map: "pk_professions") @default(autoincrement())
+  name                String                @db.VarChar(100)
+  description         String?
+  company_professions company_professions[]
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model regions {
+  region_id       Int               @id(map: "pk_regions") @default(autoincrement())
+  name            String            @db.VarChar(100)
+  description     String?
+  company_regions company_regions[]
+}
