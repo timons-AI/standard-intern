@@ -84,15 +84,15 @@ export default async function page(){
                             <p>{company.address}</p>
                             <p>{company.contact}</p>
                         </div>
-                        
-                        <p className='text-xl'
-                        >{company.company_regions.map((region) => (
+                        <div className=' p-2'>
+                        <p className='text-xl font-light'>{company.company_regions.map((region) => (
                             <span key={region.region_id}>{region.regions.name}</span>
                         ))}</p>
-                        <p className='text-sm border font-light rounded-full w-fit px-2 bg-neutral-600 text-white '
-                        >{company.company_professions.map((profession) => (
+                        <p className='text-sm  font-semibold rounded-full w-fit p-1 px-2 bg-neutral-800 text-white'>{company.company_professions.map((profession) => (
                             <span key={profession.profession_id}>{profession.professions.name}</span>
                         ))}</p>
+                        </div>
+                        
                     </li>
                 ))}
             </ul>
