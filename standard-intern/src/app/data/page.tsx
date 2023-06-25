@@ -32,7 +32,9 @@ import { get } from 'http'
             company_professions: {
                 include: {professions: true}
             }
-        }}
+        },
+        orderBy: {name: 'asc'}
+    }
     )
     
     
