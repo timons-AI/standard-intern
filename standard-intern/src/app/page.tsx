@@ -85,24 +85,6 @@ const Home = () => {
             </button>
           </div>
           
-          <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
-          <img
-    src="/images/designer.png"
-    alt="Graphic Designer"
-    className="w-16 h-16 rounded-full"
-  />
-  <div className="flex flex-col mt-4">
-    <div className="text-gray-800 font-bold text-lg">Graphic Designer</div>
-    <div className="text-blue-600 font-bold mt-1">Part time</div>
-    <div className="text-gray-800 mt-1">Location: Chicago</div>
-    <div className="text-gray-800 mt-1">People Needed: 2</div>
-    <div className="text-gray-800 font-bold mt-auto">$40/h</div>
-    <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
-      Apply
-    </button>
-  </div>
-</div>
-
 <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
   <img
     src="/images/marketing.png"
@@ -191,7 +173,7 @@ const Home = () => {
       Apply
     </button>
   </div> 
-        </div>
+    </div>
       </div>
 
       <h2 className="text-gray-800 font-bold text-xl mt-8">Nearby jobs</h2>
@@ -277,6 +259,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
