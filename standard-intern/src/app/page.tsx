@@ -84,6 +84,8 @@ const Home = () => {
               Apply
             </button>
           </div>
+          
+          <div className="flex-shrink-0 bg-white h-96 w-72 rounded-lg p-3 mx-2">
           <img
     src="/images/designer.png"
     alt="Graphic Designer"
