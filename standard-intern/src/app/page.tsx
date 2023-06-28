@@ -19,26 +19,6 @@ const Home = () => {
         We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries. Our mission is to simplify the process of finding and hiring top talent while helping individuals discover meaningful career opportunities.
       </p>
 
-      <div className="flex justify-center mt-8">
-        <h2 className="text-gray-800 font-bold text-xl mr-4">Create an Account</h2>
-        <button className="bg-gradient-to-r from-purple-400 to-pink-600 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Individual
-        </button>
-        <button className="bg-gradient-to-r from-purple-400 to-pink-600 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Company
-        </button>
-      </div>
-
-      <div className="flex justify-center mt-8">
-        <h2 className="text-gray-800 font-bold text-xl mr-4">Sign In</h2>
-        <button className="bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Sign in with Google
-        </button>
-        <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Sign in with Facebook
-        </button>
-      </div>
-
       <div className="mt-8">
         <h2 className="text-gray-800 font-bold text-xl">Why Choose Standard Corporation?</h2>
         <ul className="list-disc list-inside mt-4">
@@ -56,13 +36,23 @@ const Home = () => {
         <p className="text-gray-800 mt-4">
           Whether you're a job seeker looking for your dream role or a company seeking top talent, Standard Corporation is here to help. Sign up now and experience the future of employment solutions.
         </p>
+
         <div className="flex justify-center mt-6">
-          <button className="bg-gradient-to-r from-purple-400 to-pink-600 text-white font-bold py-2 px-4 rounded-md mx-2">
-            Create an Account
-          </button>
-          <button className="bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-bold py-2 px-4 rounded-md mx-2">
-            Sign In
-          </button>
+
+          <div className="flex justify-center mt-8">
+        <h2 className="text-gray-800 font-bold text-xl mr-4">Create an Account</h2>
+        <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
+          Individual
+        </button>
+        <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
+          Company
+        </button>
+      </div>
+              <div className="flex justify-center mt-8">
+        <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
+          Sign In
+        </button>
+      </div>
         </div>
       </div>
 
