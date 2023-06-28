@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 
 const Home = () => {
@@ -12,11 +13,13 @@ const Home = () => {
         <h1 className="text-black text-shadow-md font-bold text-4xl my-2 py-2 px-4 text-center">
           <span className="text-white">Standard Corporation</span>
         </h1>
-        <p className="text-gray-800 mt-4">
-          We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries.
-        </p>
+
         <a href="/about" className="bg-black text-white mt-4 py-2 px-4 rounded-lg">Learn more</a>
       </div>
+
+      <p className="text-gray-800 mt-4">
+        We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries.
+      </p>
 
       <h2 className="text-gray-800 font-bold text-2xl mt-5">Find new opportunities</h2>
 
