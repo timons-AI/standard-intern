@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from './Components/Navbar';
-import Footer from './Components/footer';
+import Navbar from './Navbar/Navbar';
 
 
 const Home = () => {
@@ -68,7 +67,6 @@ const Home = () => {
         </p>
       </div>
 
-      <Footer />
     </div>
 
   );
