@@ -38,21 +38,21 @@ const Home = () => {
         </p>
 
         <div className="flex justify-center mt-6">
-
+          <h2 className="text-gray-800 font-bold text-xl">Create an Account</h2>
           <div className="flex justify-center mt-8">
-        <h2 className="text-gray-800 font-bold text-xl mr-4">Create an Account</h2>
-        <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Individual
-        </button>
-        <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Company
-        </button>
-      </div>
-              <div className="flex justify-center mt-8">
-        <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
-          Sign In
-        </button>
-      </div>
+            <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
+              Individual
+            </button>
+            <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
+              Company
+            </button>
+          </div>
+        </div>
+
+        <div className="flex justify-center mt-8">
+          <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md">
+            Sign In
+          </button>
         </div>
       </div>
 
