@@ -16,7 +16,7 @@ const Navbar = () => {
               <span className="text-white font-bold text-lg">Standard Corporation</span>
             </div>
           </div>
-          <div className="flex md:hidden">
+          <div className="md:hidden">
             <button
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               onClick={toggleMenu}
@@ -37,7 +37,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden md:flex">
+          <div className={`hidden md:flex ${isMenuOpen ? 'flex' : 'hidden'}`}>
             <a
               href="#"
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -65,7 +65,7 @@ const Navbar = () => {
           </div>
         </div>
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 href="#"
