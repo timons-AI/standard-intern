@@ -37,7 +37,7 @@ const Home = () => {
           Whether you're a job seeker looking for your dream role or a company seeking top talent, Standard Corporation is here to help. Sign up now and experience the future of employment solutions.
         </p>
 
-        <div className="flex justify-center mt-6">
+        <div className="flex flex-col items-center mt-6">
           <h2 className="text-gray-800 font-bold text-xl">Create an Account</h2>
           <div className="flex justify-center mt-8">
             <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
