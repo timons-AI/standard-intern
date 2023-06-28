@@ -1,77 +1,102 @@
-import React from 'react';
-import Head from 'next/head';
-import Navbar from '.././app/Components/Navbar';
-import Footer from './Components/footer';
+import React, { useState } from 'react';
 
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-const Home = () => {
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="bg-gradient-to-b from-gray-200 to-gray-100 text-black p-5">
-      <Head>
-        <title>Home</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Navbar />
-
-      <div className="card bg-gradient-diagonal-orange rounded-lg overflow-hidden shadow-lg">
-        <h1 className="text-black text-shadow-md font-bold text-4xl my-2 py-2 px-4 text-center">
-          <span className="text-white">Standard Corporation</span>
-        </h1>
-      </div>
-
-      <p className="text-gray-800 mt-4">
-        We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries. Our mission is to simplify the process of finding and hiring top talent while helping individuals discover meaningful career opportunities.
-      </p>
-
-      <div className="mt-8">
-        <h2 className="text-gray-800 font-bold text-xl">Why Choose Standard Corporation?</h2>
-        <ul className="list-disc list-inside mt-4">
-          <li className="text-gray-800">Access to a vast network of job opportunities across various industries.</li>
-          <li className="text-gray-800">Efficient and streamlined hiring process for employers.</li>
-          <li className="text-gray-800">Personalized job recommendations based on your skills and preferences.</li>
-          <li className="text-gray-800">Dedicated support from our team of career experts.</li>
-          <li className="text-gray-800">Innovative technology platform for seamless job matching.</li>
-          <li className="text-gray-800">Trusted by millions of individuals and companies worldwide.</li>
-        </ul>
-      </div>
-
-      <div className="mt-8">
-        <h2 className="text-gray-800 font-bold text-xl">Join Standard Corporation Today</h2>
-        <p className="text-gray-800 mt-4">
-          Whether you're a job seeker looking for your dream role or a company seeking top talent, Standard Corporation is here to help. Sign up now and experience the future of employment solutions.
-        </p>
-
-        <div className="flex flex-col items-center mt-6">
-          <h2 className="text-gray-800 font-bold text-xl">Create an Account</h2>
-          <div className="flex justify-center mt-8">
-            <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
-              Individual
-            </button>
-            <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2">
-              Company
+    <nav className="bg-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <span className="text-white font-bold text-lg">Standard Corporation</span>
+            </div>
+          </div>
+          <div className="flex md:hidden">
+            <button
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              onClick={toggleMenu}
+            >
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
             </button>
           </div>
+          <div className="hidden md:flex">
+            <a
+              href="#"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Services
+            </a>
+            <a
+              href="#"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Contact
+            </a>
+          </div>
         </div>
-
-        <div className="flex justify-center mt-8">
-          <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md">
-            Sign In
-          </button>
-        </div>
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                About
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Services
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
       </div>
-
-      <div className="mt-8">
-        <h2 className="text-gray-800 font-bold text-xl">Contact Us</h2>
-        <p className="text-gray-800 mt-4">
-          Have any questions or need assistance? Our team is ready to help. Reach out to us via email at info@standardcorp.com or give us a call at +1 (123) 456-7890.
-        </p>
-      </div>
-
-      <Footer />
-    </div>
-
+    </nav>
   );
 };
 
-export default Home;
+export default Navbar;
