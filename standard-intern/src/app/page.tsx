@@ -1,5 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import Navbar from '.././app/Components/Navbar';
+import Footer from './Components/footer';
+
 
 const Home = () => {
   return (
@@ -8,6 +11,8 @@ const Home = () => {
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar />
 
       <div className="card bg-gradient-diagonal-orange rounded-lg overflow-hidden shadow-lg">
         <h1 className="text-black text-shadow-md font-bold text-4xl my-2 py-2 px-4 text-center">
@@ -62,7 +67,10 @@ const Home = () => {
           Have any questions or need assistance? Our team is ready to help. Reach out to us via email at info@standardcorp.com or give us a call at +1 (123) 456-7890.
         </p>
       </div>
+
+      <Footer />
     </div>
+
   );
 };
 
