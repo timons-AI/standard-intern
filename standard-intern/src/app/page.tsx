@@ -12,6 +12,10 @@ const Home = () => {
         <h1 className="text-black text-shadow-md font-bold text-4xl my-2 py-2 px-4 text-center">
           <span className="text-white">Standard Corporation</span>
         </h1>
+        <p className="text-gray-800 mt-4">
+          We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries.
+        </p>
+        <a href="/about" className="bg-black text-white mt-4 py-2 px-4 rounded-lg">Learn more</a>
       </div>
 
       <h2 className="text-gray-800 font-bold text-2xl mt-5">Find new opportunities</h2>
@@ -60,7 +64,7 @@ const Home = () => {
             <div className="text-gray-800 mt-1">Location: New York</div>
             <div className="text-gray-800 mt-1">People Needed: 3</div>
             <div className="text-gray-800 font-bold mt-auto">$50/h</div>
-            <button className="bg-black text-white mt-4 py-2 px-4 rounded lg">
+            <button className="bg-black text-white mt-4 py-2 px-4 rounded-lg">
               Apply
             </button>
           </div>
@@ -95,4 +99,3 @@ const Home = () => {
 };
 
 export default Home;
-
