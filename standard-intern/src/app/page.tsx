@@ -1,8 +1,6 @@
-
 import React from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar/Navbar';
-
 
 const Home = () => {
   return (
@@ -14,12 +12,12 @@ const Home = () => {
 
       <Navbar />
 
-      <div className="card bg-gradient-diagonal-orange rounded-lg overflow-hidden shadow-lg my-8">
+      <div className="card bg-gradient-diagonal-orange rounded-lg overflow-hidden shadow-lg my-8 mt-16"> {/* Add mt-16 to create spacing */}
         <h1 className="text-black text-shadow-md font-bold text-4xl my-2 py-2 px-4 text-center">
           <span className="text-white">Standard Corporation</span>
         </h1>
       </div>
-
+      
       <p className="text-gray-800 mt-4">
         We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries. Our mission is to simplify the process of finding and hiring top talent while helping individuals discover meaningful career opportunities.
       </p>
