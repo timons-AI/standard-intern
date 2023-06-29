@@ -1,4 +1,6 @@
 "use client";
+
+
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -9,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-gray-800">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -64,7 +66,7 @@ const Navbar = () => {
               </button>
             </div>
             {/* Menu items */}
-            <ul className="hidden md:flex md:flex-row items-center h-full pt-8 space-x-8 px-4">
+            <ul className="flex flex-col items-start h-full pt-8 space-y-4 overflow-y-auto px-4">
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
                   <span className="mr-2">&#9679;</span> Home
