@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -85,7 +84,7 @@ const Navbar = () => {
               </button>
             </div>
             {/* Menu items */}
-            <ul className="flex flex-col items-start h-full pt-8 space-y-4 px-4">
+            <ul className="flex flex-col items-start h-full pt-8 space-y-4 overflow-y-auto px-4">
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
                   Home
@@ -120,7 +119,7 @@ const Navbar = () => {
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
                   Connections
                 </a>
-                <ul className="pl-4">
+                <ul className="pl-4 space-y-2">
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
                       Find Alumni
