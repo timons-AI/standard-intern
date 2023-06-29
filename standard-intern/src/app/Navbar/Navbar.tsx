@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -39,7 +38,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className={`md:hidden fixed inset-0 bg-gray-800 z-50 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+          <div className={`md:hidden fixed inset-y-0 right-0 w-1/2 bg-gray-800 z-50 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             {/* Menu items */}
             <ul className="flex flex-col items-start h-full pt-16 space-y-4 px-4">
               <li>
