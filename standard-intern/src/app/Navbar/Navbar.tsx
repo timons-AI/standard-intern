@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -17,26 +18,6 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <span className="text-white font-bold">STANDARD</span>
             </div>
-          </div>
-          <div className="hidden md:flex md:items-center">
-            {/* Menu items */}
-            <ul className="flex space-x-4">
-              <li>
-                <a className="text-gray-300 hover:text-white text-base font-medium" href="#">
-                  Menu Item 1
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-base font-medium" href="#">
-                  Menu Item 2
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-base font-medium" href="#">
-                  Menu Item 3
-                </a>
-              </li>
-            </ul>
           </div>
           <div className="md:hidden">
             <button
@@ -97,7 +78,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs
+                  Explore Opportunities
                 </a>
               </li>
               <li>
@@ -161,86 +142,6 @@ const Navbar = () => {
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs &gt; Jobs You May Be Interested In
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs &gt; Saved Jobs
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs &gt; Job Alerts
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs &gt; Salary Insights
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs &gt; Companies
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Jobs &gt; Interview Preparation
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Messaging &gt; Conversations
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Messaging &gt; Connection Requests
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Messaging &gt; InMail
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Notifications &gt; All Notifications
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Notifications &gt; Settings &amp; Privacy
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Notifications &gt; Help Center
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  My Profile &gt; View Profile
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  My Profile &gt; Edit Profile
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  My Profile &gt; Settings &amp; Privacy
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  My Profile &gt; Help Center
-                </a>
               </li>
             </ul>
           </div>
