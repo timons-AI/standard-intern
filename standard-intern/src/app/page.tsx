@@ -64,10 +64,16 @@ const Home = () => {
         <div className="flex flex-col items-center mt-6">
           <h2 className="text-gray-800 font-bold text-xl">Create an Account</h2>
           <div className="flex justify-center mt-8">
-            <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2" onClick={openUserModal}>
+            <button
+              className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2"
+              onClick={openUserModal}
+            >
               Individual
             </button>
-            <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2" onClick={openCompanyModal}>
+            <button
+              className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2"
+              onClick={openCompanyModal}
+            >
               Company
             </button>
           </div>
@@ -77,20 +83,20 @@ const Home = () => {
           <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md">
             Sign In
           </button>
-        </div>
-      </div>
+        
+          </div>
 
-      <div className="mt-8">
-        <h2 className="text-gray-800 font-bold text-xl">Contact Us</h2>
-        <p className="text-gray-800 mt-4">
-          Have any questions or need assistance? Our team is ready to help. Reach out to us via email at info@standardcorp.com or give us a call at +1 (123) 456-7890.
-        </p>
-      </div>
-
-      <RegisterUserModal isOpen={isUserModalOpen} onClose={closeUserModal} />
-      <RegisterCompanyModal isOpen={isCompanyModalOpen} onClose={closeCompanyModal} />
-    </div>
-  );
+<RegisterUserModal
+  isOpen={isUserModalOpen}
+  onClose={closeUserModal}
+/>
+<RegisterCompanyModal
+  isOpen={isCompanyModalOpen}
+  onClose={closeCompanyModal}
+/>
+</div>
+</div>
+);
 };
 
 export default Home;
