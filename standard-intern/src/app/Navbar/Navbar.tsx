@@ -21,7 +21,7 @@ const Navbar = () => {
             <button
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               onClick={toggleMenu}
-            >
+            >Search
               <svg
                 className="h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
