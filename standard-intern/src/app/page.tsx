@@ -15,7 +15,7 @@ const Home = () => {
       <Navbar />
 
       <div className="card bg-gradient-diagonal-orange rounded-lg overflow-hidden shadow-lg">
-        <h1 className="text-black text-shadow-md font-bold text-4xl my-2 py-2 px-4 text-center">
+        <h1 className="text-black text-shadow-md font-bold text-4xl my-8 py-2 px-4 text-center">
           <span className="text-white">Standard Corporation</span>
         </h1>
       </div>
