@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -87,42 +88,159 @@ const Navbar = () => {
             <ul className="flex flex-col items-start h-full pt-8 space-y-4 px-4">
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 1
+                  Home
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 2
+                  My Network
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 3
+                  Jobs
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 4
+                  Messaging
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 5
+                  Notifications
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 6
+                  My Profile
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 7
+                  Connections
+                </a>
+                <ul className="pl-4">
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Find Alumni
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      People You May Know
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Add Connections
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Contacts
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Groups
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Events
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Companies
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                      Hashtags
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Jobs &gt; Jobs You May Be Interested In
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Menu Item 8
+                  Jobs &gt; Saved Jobs
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Jobs &gt; Job Alerts
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Jobs &gt; Salary Insights
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Jobs &gt; Companies
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Jobs &gt; Interview Preparation
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Messaging &gt; Conversations
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Messaging &gt; Connection Requests
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Messaging &gt; InMail
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Notifications &gt; All Notifications
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Notifications &gt; Settings &amp; Privacy
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  Notifications &gt; Help Center
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  My Profile &gt; View Profile
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  My Profile &gt; Edit Profile
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  My Profile &gt; Settings &amp; Privacy
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
+                  My Profile &gt; Help Center
                 </a>
               </li>
             </ul>
