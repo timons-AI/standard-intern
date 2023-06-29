@@ -1,11 +1,13 @@
+"use client";
+
 import React from 'react';
 
-type RegisterUserModalProps = {
+type RegisterCompanyModalProps = {
   isOpen: boolean;
   onClose: () => void;
 };
 
-const RegisterUserModal: React.FC<RegisterUserModalProps> = ({ isOpen, onClose }) => {
+const RegisterCompanyModal: React.FC<RegisterCompanyModalProps> = ({ isOpen, onClose }) => {
   // Modal content and functionality here
 
   return (
@@ -16,4 +18,4 @@ const RegisterUserModal: React.FC<RegisterUserModalProps> = ({ isOpen, onClose }
   );
 };
 
-export default RegisterUserModal;
+export default RegisterCompanyModal;
