@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -10,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-800 fixed top-0 left-0 right-0 z-50">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -65,80 +64,80 @@ const Navbar = () => {
               </button>
             </div>
             {/* Menu items */}
-            <ul className="flex flex-col items-start h-full pt-8 space-y-4 overflow-y-auto px-4">
+            <ul className="hidden md:flex md:flex-row items-center h-full pt-8 space-x-8 px-4">
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Home
+                  <span className="mr-2">&#9679;</span> Home
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  My Network
+                  <span className="mr-2">&#9679;</span> My Network
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Explore Opportunities
+                  <span className="mr-2">&#9679;</span> Explore Opportunities
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Messaging
+                  <span className="mr-2">&#9679;</span> Messaging
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Notifications
+                  <span className="mr-2">&#9679;</span> Notifications
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  My Profile
+                  <span className="mr-2">&#9679;</span> My Profile
                 </a>
               </li>
               <li>
                 <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                  Connections
+                  <span className="mr-2">&#9679;</span> Connections
                 </a>
                 <ul className="pl-4 space-y-2">
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Find Alumni
+                      <span className="mr-2">&#9679;</span> Find Alumni
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      People You May Know
+                      <span className="mr-2">&#9679;</span> People You May Know
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Add Connections
+                      <span className="mr-2">&#9679;</span> Add Connections
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Contacts
+                      <span className="mr-2">&#9679;</span> Contacts
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Groups
+                      <span className="mr-2">&#9679;</span> Groups
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Events
+                      <span className="mr-2">&#9679;</span> Events
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Companies
+                      <span className="mr-2">&#9679;</span> Companies
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-300 hover:text-white text-lg font-medium" href="#">
-                      Hashtags
+                      <span className="mr-2">&#9679;</span> Hashtags
                     </a>
                   </li>
                 </ul>
