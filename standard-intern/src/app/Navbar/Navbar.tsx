@@ -15,8 +15,28 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <span className="text-white font-bold">Standard</span>
+              <span className="text-white font-bold">STANDARD</span>
             </div>
+          </div>
+          <div className="hidden md:flex md:items-center">
+            {/* Menu items */}
+            <ul className="flex space-x-4">
+              <li>
+                <a className="text-gray-300 hover:text-white text-base font-medium" href="#">
+                  Menu Item 1
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-base font-medium" href="#">
+                  Menu Item 2
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-300 hover:text-white text-base font-medium" href="#">
+                  Menu Item 3
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="md:hidden">
             <button
@@ -58,6 +78,25 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <button
+              className="absolute top-0 right-0 mt-4 mr-4 text-gray-300 hover:text-white focus:outline-none"
+              onClick={toggleMenu}
+            >
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
