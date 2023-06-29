@@ -1,8 +1,6 @@
+"use client";
 
 import React, { useState } from 'react';
-import Logo from './Logo';
-import MenuItem from './MenuItem';
-import Search from './Search';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +14,7 @@ const Navbar = () => {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Logo /> {/* Include the Logo component */}
+{/* include logo code */}
           </div>
           <div className="md:hidden">
             <button
@@ -40,24 +38,17 @@ const Navbar = () => {
             </button>
           </div>
           <div className={`hidden md:flex ${isMenuOpen ? 'flex' : 'hidden'}`}>
-            <MenuItem onClick={toggleMenu} label="Home" /> {/* Include the MenuItem component for each menu item */}
-            <MenuItem onClick={toggleMenu} label="About" />
-            <MenuItem onClick={toggleMenu} label="Services" />
-            <MenuItem onClick={toggleMenu} label="Contact" />
+            {/* include menu items code */}
           </div>
         </div>
         {isMenuOpen && (
           <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <MenuItem onClick={toggleMenu} label="Home" /> {/* Include the MenuItem component for each menu item */}
-              <MenuItem onClick={toggleMenu} label="About" />
-              <MenuItem onClick={toggleMenu} label="Services" />
-              <MenuItem onClick={toggleMenu} label="Contact" />
+           {/* include menu code */}
             </div>
           </div>
         )}
       </div>
-      <Search /> {/* Include the Search component */}
     </nav>
   );
 };
