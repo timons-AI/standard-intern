@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <span className="text-white font-bold">use client</span>
+              <span className="text-white font-bold">Standard</span>
             </div>
           </div>
           <div className="md:hidden">
