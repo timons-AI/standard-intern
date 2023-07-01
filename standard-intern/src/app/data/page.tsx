@@ -1,9 +1,6 @@
 import React from 'react'
 import { db } from '@/lib/db'
-import { clear } from 'console'
-import { get } from 'http'
-
-
+import Bear from '@/components/Bear'
 /// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
 // model companies {
 //     company_id          Int                   @id(map: "pk_companies") @default(autoincrement())
@@ -58,6 +55,7 @@ import { get } from 'http'
 }
 
 export default async function page(){
+
     const companies = await getCompanies()
     // const regions = await getRegions(60)
     const company = await getCompany(60)
@@ -65,6 +63,8 @@ export default async function page(){
     
     return(
         <div className=' border m-2 p-2'>
+            <Bear/>
+           
             {/* <h1 className='text-2xl'>Regions</h1>
             <ul className=''>
                 {regions.map((region) => (
