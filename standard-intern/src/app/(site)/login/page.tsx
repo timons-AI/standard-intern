@@ -11,11 +11,14 @@ import { useSession } from 'next-auth/react'
 
 const Auth = () => {
 
+
     const {data: session} = useSession();
     if (session) {
         return redirect('/')
     }
     const router = useRouter();
+    const [loading, setLoading] = useState(false);
+    const [ wrongCredentials, setWrongCredentials] = useState(false);
    
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -28,6 +31,7 @@ const Auth = () => {
 
     const login = useCallback(async ()=>{
         try{
+            setLoading(true);
             const result = await signIn('credentials', {
                 redirect: false,
                 email,
@@ -43,14 +47,15 @@ const Auth = () => {
             
         }catch(error){
             // break and throw error message
+            
             console.log('error',error);
-           
         }
         if (session) {
             return redirect('/')
-        }
+        }setLoading(false);
+        setWrongCredentials(true);
         // router.push('/')
-    },[email, password, ]);
+    },[email, password, router, session]);
 
 
     const register = useCallback(async ()=>{
@@ -69,6 +74,7 @@ const Auth = () => {
 
         }catch(error){
             console.log (error);
+
         }
     },[email, password, name, login]);
 
@@ -109,7 +115,17 @@ const Auth = () => {
                        value={password}
                        />
                     </div>
-                    <button onClick={variant === 'login' ? login : register} className=" bg-teal-600 active:scale-95 py-3 text-white rounded-md w-full mt-10 hover:bg-teal-700 transition ">
+                    {
+  variant === 'login' ? 
+    (wrongCredentials && <div className="text-red-500 text-sm mt-2" id="error">wrong password or email</div>) 
+    :
+    (wrongCredentials && <div className="text-red-500 text-sm mt-2" id="error">username already in use or missing values </div>)
+    
+}
+
+
+                    
+                    <button onClick={variant === 'login' ? login : register} className={` bg-teal-600 active:scale-95 py-3 text-white rounded-md w-full mt-10 hover:bg-teal-700 transition ${ loading && 'animate-ping'} `} disabled={loading} >
                         { variant === 'login' ? 'Sign In' : 'Register'}
                     </button>
                     <div className=" flex flex-row items-center gap-4 mt-8 justify-center ">
