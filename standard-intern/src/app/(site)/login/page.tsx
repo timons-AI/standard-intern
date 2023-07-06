@@ -7,8 +7,14 @@ import { redirect } from "next/navigation";
 import { FcGoogle } from "react-icons/fc";
 import {FaGithub} from "react-icons/fa";
 import { useRouter} from 'next/navigation';
+import { useSession } from 'next-auth/react'
 
 const Auth = () => {
+
+    const {data: session} = useSession();
+    if (session) {
+        return redirect('/')
+    }
     const router = useRouter();
    
     const [email, setEmail] = useState("");
@@ -20,7 +26,6 @@ const Auth = () => {
         setVariant((currentVariant)=> currentVariant === 'login' ? 'register' : 'login')
     },[]);
 
-    
     const login = useCallback(async ()=>{
         try{
             const result = await signIn('credentials', {
@@ -32,13 +37,19 @@ const Auth = () => {
             console.log({
                 email: email,
                 password: password,
-
             })
             console.log('result',result);
-           router.push('/') 
+            
+            
         }catch(error){
-            console.log (error);
+            // break and throw error message
+            console.log('error',error);
+           
         }
+        if (session) {
+            return redirect('/')
+        }
+        // router.push('/')
     },[email, password, ]);
 
 
@@ -98,7 +109,7 @@ const Auth = () => {
                        value={password}
                        />
                     </div>
-                    <button onClick={variant === 'login' ? login : register} className=" bg-teal-600 py-3 text-white rounded-md w-full mt-10 hover:bg-teal-700 transition ">
+                    <button onClick={variant === 'login' ? login : register} className=" bg-teal-600 active:scale-95 py-3 text-white rounded-md w-full mt-10 hover:bg-teal-700 transition ">
                         { variant === 'login' ? 'Sign In' : 'Register'}
                     </button>
                     <div className=" flex flex-row items-center gap-4 mt-8 justify-center ">

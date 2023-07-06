@@ -13,7 +13,7 @@ export default async function Dashboard(){
     
     return (
         <div className=" ">
-            <h1 className=" text-4xl w-fit p-2 text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-fuchsia-300 font-extrabold">Dashboard</h1>
+            <h1 className=" text-4xl w-fit p-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-fuchsia-300 font-extrabold">Dashboard</h1>
             <LoginButton/>
         </div>
         
