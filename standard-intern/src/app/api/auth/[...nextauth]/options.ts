@@ -1,6 +1,8 @@
 import type { NextAuthOptions} from 'next-auth';
 import GithubProvider from 'next-auth/providers/github'
-import CredentialsProvider from 'next-auth/providers/credentials'
+import CredentialsProvider from 'next-auth/providers/credentials';
+import { db } from '@/lib/db';
+import  bcrypt  from 'bcrypt';
 export const options: NextAuthOptions = {
     providers: [
         GithubProvider({
@@ -8,28 +10,53 @@ export const options: NextAuthOptions = {
             clientSecret: process.env.GITHUB_SECRET as string,
         }),
         CredentialsProvider({
-            name: "Credentials",
+            name: 'credentials',
             credentials: {
-                username: { 
-                    label: "Username", 
-                    type: "text", 
-                    placeholder: "your-cool-username" },
-                password: {
-                    label: "Password",
-                    type: "password",
-                    placeholder: "your-super-secret-password"
+              email: { label: 'email', type: 'text' },
+              password: { label: 'password', type: 'password' }
+            },
+            async authorize(credentials) {
+              if (!credentials?.email || !credentials?.password) {
+                throw new Error('Invalid credentials something missing');
+              }
+      
+              const user = await db.user.findUnique({
+                where: {
+                  email: credentials.email
                 }
-
-        },
-        async authorize(credentials) {
-            const user = { id: "23", name: 'J Smith', password: 'nextauth' }
-            if ( credentials?.username === user.name && credentials?.password === user.password ) {
-
-                return user
-            } else {
-                return null
+              });
+              console.log(user)
+      
+              if (!user || !user?.password) {
+                throw new Error('Invalid credentials something missing 404 ');
+              }
+      
+              const isCorrectPassword = await bcrypt.compare(
+                credentials.password,
+                user.password
+              );
+      
+              if (!isCorrectPassword) {
+                throw new Error('Invalid credentials password wrong');
+              }
+      
+              return user;
             }
-        }
-    })
+          })
     ],
+    secret: process.env.SECRET,
+    session: {
+        strategy: 'jwt',
+    },
+    // callbacks: {
+    //     session: ( {session, token})=>{
+    //         console.log('Session Callback', { session, token})
+    //         return session
+    //     },
+    //     jwt: ({ token, user})=>{
+    //         console.log('JWT Callback', { token, user})
+    //         return token
+    //     },
+    // },
+    debug: process.env.NODE_ENV === 'development',
 }

@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Navbar from './Components/Navbar/Navbar';
 import RegisterUserModal from './Modals/RegisterUserModal';
-import RegisterCompanyModal from './Modals/RegisterCompanyModal';
-
+import RegisterCompanyModal from './Modals/RegisterCompanyModal'; 
+import { LoginButton } from '@/components/auth';
 const Home = () => {
   const [isUserModalOpen, setUserModalOpen] = useState(false);
   const [isCompanyModalOpen, setCompanyModalOpen] = useState(false);
@@ -61,7 +61,9 @@ const Home = () => {
         <p className="text-gray-800 mt-4">
           Whether you're a job seeker looking for your dream role or a company seeking top talent, Standard Corporation is here to help. Sign up now and experience the future of employment solutions.
         </p>
+      {/* <div className=' hidden'>
 
+      
         <div className="flex flex-col items-center mt-6">
           <h2 className="text-gray-800 font-bold text-xl">Create an Account</h2>
           <div className="flex justify-center mt-8">
@@ -95,6 +97,10 @@ const Home = () => {
   isOpen={isCompanyModalOpen}
   onClose={closeCompanyModal}
 />
+</div> */}
+<div className=' border border-black  p-2 m-3 rounded'>
+  <LoginButton/>
+</div>
 </div>
 </div>
 );
