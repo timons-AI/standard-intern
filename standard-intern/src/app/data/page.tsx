@@ -1,3 +1,10 @@
+import { options } from '../api/auth/[...nextauth]/options'
+import { getServerSession} from "next-auth/next"
+
+// for client components 
+import { useSession} from "next-auth/react" 
+
+import { redirect } from "next/navigation";
 import React from 'react'
 import { db } from '@/lib/db'
 import Bear from '@/components/Bear'
@@ -60,9 +67,20 @@ export default async function page(){
     // const regions = await getRegions(60)
     const company = await getCompany(60)
     console.log(company?.company_regions)
-    
+    const session = await getServerSession(options)
+    if (!session){
+        redirect('/api/auth/signin?callbackUrl=/data')
+    }
+
+   
     return(
         <div className=' border m-2 p-2'>
+            {
+                session ?  <h1 className=' p-1 border m-2 border-black rounded-full w-fit'>
+                    Welcome {session.user?.name}!
+
+                </h1> : <h1> You shall not pass!</h1>
+            }
             <Bear/>
            
             {/* <h1 className='text-2xl'>Regions</h1>
