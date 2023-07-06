@@ -55,7 +55,7 @@ const Auth = () => {
         }setLoading(false);
         setWrongCredentials(true);
         // router.push('/')
-    },[email, password, router, session]);
+    },[email, password]);
 
 
     const register = useCallback(async ()=>{
