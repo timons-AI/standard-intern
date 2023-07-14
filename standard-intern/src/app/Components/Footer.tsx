@@ -7,7 +7,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="pt-10 sm:mt-10 bg-gray-800">
-      <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+      <div className="max-w-6xl m-auto text-gray-500 flex flex-wrap justify-left">
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           <div className="text-xs uppercase text-gray-400 font-medium mb-6">
             Navigation
