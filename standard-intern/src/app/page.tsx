@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import RegisterUserModal from './Modals/RegisterUserModal';
 import RegisterCompanyModal from './Modals/RegisterCompanyModal'; 
 import { LoginButton } from '@/components/auth';
+import Footer from './Components/Footer';
 const Home = () => {
   const [isUserModalOpen, setUserModalOpen] = useState(false);
   const [isCompanyModalOpen, setCompanyModalOpen] = useState(false);
@@ -102,7 +103,11 @@ const Home = () => {
   <LoginButton/>
 </div>
 </div>
+<footer >
+        <Footer/>
+       </footer>
 </div>
+
 );
 };
 
