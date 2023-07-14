@@ -99,6 +99,7 @@ const Home = () => {
   onClose={closeCompanyModal}
 />
 </div> */}
+
 <div className=' border border-black  p-2 m-3 rounded'>
   <LoginButton/>
 </div>
