@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from '../Components/Footer';
 
 const Home = () => {
   return (
@@ -262,6 +263,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <Footer/>
     </div>
 
   );
