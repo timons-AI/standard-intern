@@ -8,6 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import {FaGithub} from "react-icons/fa";
 import { useRouter} from 'next/navigation';
 import { useSession } from 'next-auth/react'
+import Footer from "@/app/Components/Footer";
 
 const Auth = () => {
 
@@ -142,7 +143,7 @@ const Auth = () => {
                 </div>
             </div>
         </div>
-            
+           <Footer/> 
         </div>
     );
     };

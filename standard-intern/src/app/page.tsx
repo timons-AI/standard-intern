@@ -102,10 +102,8 @@ const Home = () => {
 <div className=' border border-black  p-2 m-3 rounded'>
   <LoginButton/>
 </div>
-</div>
-
-        <Footer/>
-       
+<Footer/>
+</div>   
 </div>
 
 );
