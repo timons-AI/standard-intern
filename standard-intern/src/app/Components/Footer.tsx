@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-// import { FaFacebook, FaTwitter, FaInstagram , FaYoutube} from 'react-icons/fa';
-// import { AiOutlineWhatsApp, AiFillPhone, AiFillMail } from 'react-icons/ai';
 
 const Footer = () => {
   return (
@@ -25,34 +23,7 @@ const Footer = () => {
             Contact
           </a>
         </div>
-        {/* <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-            Social Media
-          </div>
-          <a href="/" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            <FaFacebook className="text-gray-500 mr-2" />
-            Facebook
-          </a>
-          <a href="https://www.twitter.com/standardintern" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            <FaTwitter className="text-gray-500 mr-2" />
-            Twitter
-          </a>
-          <a href="https://www.instagram.com/standardintern" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            <FaInstagram className="text-gray-500 mr-2" />
-            Instagram
-          </a>
-            < a href="https://wa.me/+256708163155?text=Hello there" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            <AiOutlineWhatsApp className="text-gray-500 mr-2" />
-            Whatsapp
-            </a>
-
-            < a href="tel:+256 708163155
-            " className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            <AiFillPhone className="text-gray-500 mr-2" />
-            Phone
-            </a>
-          
-        </div> */}
+       
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           <div className="text-xs uppercase text-gray-400 font-medium mb-6">
             Contact Us
@@ -66,9 +37,7 @@ const Footer = () => {
           <div className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
             <a href="tel:+256 708163155">Phone: +256 708163155</a>
           </div>
-          {/* <div className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            <p>Address: 123 Main St, Suite 101, Anytown, USA</p>
-          </div> */}
+         
         </div>
       </div>
       <div className="p-2 text-gray-300 text-center text-sm">
