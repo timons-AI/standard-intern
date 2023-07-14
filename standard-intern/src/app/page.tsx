@@ -1,11 +1,13 @@
 "use client";
+
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Navbar from './Components/Navbar/Navbar';
 import RegisterUserModal from './Modals/RegisterUserModal';
-import RegisterCompanyModal from './Modals/RegisterCompanyModal'; 
+import RegisterCompanyModal from './Modals/RegisterCompanyModal';
 import { LoginButton } from '@/components/auth';
 import Footer from './Components/Footer';
+
 const Home = () => {
   const [isUserModalOpen, setUserModalOpen] = useState(false);
   const [isCompanyModalOpen, setCompanyModalOpen] = useState(false);
@@ -40,7 +42,7 @@ const Home = () => {
           <span className="text-white">Standard Corporation</span>
         </h1>
       </div>
-      
+
       <p className="text-gray-800 mt-4">
         We are a leading provider of employment solutions, connecting job seekers with employers in a variety of industries. Our mission is to simplify the process of finding and hiring top talent while helping individuals discover meaningful career opportunities.
       </p>
@@ -62,53 +64,15 @@ const Home = () => {
         <p className="text-gray-800 mt-4">
           Whether you're a job seeker looking for your dream role or a company seeking top talent, Standard Corporation is here to help. Sign up now and experience the future of employment solutions.
         </p>
-      {/* <div className=' hidden'>
 
-      
-        <div className="flex flex-col items-center mt-6">
-          <h2 className="text-gray-800 font-bold text-xl">Create an Account</h2>
-          <div className="flex justify-center mt-8">
-            <button
-              className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2"
-              onClick={openUserModal}
-            >
-              Individual
-            </button>
-            <button
-              className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md mx-2"
-              onClick={openCompanyModal}
-            >
-              Company
-            </button>
-          </div>
+        <div className="border border-black p-2 m-3 rounded">
+          <LoginButton />
         </div>
+      </div>
 
-        <div className="flex justify-center mt-8">
-          <button className="bg-gradient-to-r from-black to-gray-800 text-white font-bold py-2 px-4 rounded-md">
-            Sign In
-          </button>
-        
-          </div>
-
-<RegisterUserModal
-  isOpen={isUserModalOpen}
-  onClose={closeUserModal}
-/>
-<RegisterCompanyModal
-  isOpen={isCompanyModalOpen}
-  onClose={closeCompanyModal}
-/>
-</div> */}
-
-<div className=' border border-black  p-2 m-3 rounded'>
-  <LoginButton/>
-</div>
-
-</div> 
-<Footer/>  
-</div>
-
-);
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;
