@@ -25,34 +25,34 @@ const Footer = () => {
             Contact
           </a>
         </div>
-        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+        {/* <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           <div className="text-xs uppercase text-gray-400 font-medium mb-6">
             Social Media
           </div>
-          {/* <a href="/" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+          <a href="/" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
             <FaFacebook className="text-gray-500 mr-2" />
             Facebook
-          </a> */}
+          </a>
           <a href="https://www.twitter.com/standardintern" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            {/* <FaTwitter className="text-gray-500 mr-2" /> */}
+            <FaTwitter className="text-gray-500 mr-2" />
             Twitter
           </a>
           <a href="https://www.instagram.com/standardintern" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            {/* <FaInstagram className="text-gray-500 mr-2" /> */}
+            <FaInstagram className="text-gray-500 mr-2" />
             Instagram
           </a>
             < a href="https://wa.me/+256708163155?text=Hello there" className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            {/* <AiOutlineWhatsApp className="text-gray-500 mr-2" /> */}
+            <AiOutlineWhatsApp className="text-gray-500 mr-2" />
             Whatsapp
             </a>
 
             < a href="tel:+256 708163155
             " className="flex items-center my-3  text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-            {/* <AiFillPhone className="text-gray-500 mr-2" /> */}
+            <AiFillPhone className="text-gray-500 mr-2" />
             Phone
             </a>
           
-        </div>
+        </div> */}
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           <div className="text-xs uppercase text-gray-400 font-medium mb-6">
             Contact Us
