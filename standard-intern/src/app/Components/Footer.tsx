@@ -1,12 +1,12 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 // import { FaFacebook, FaTwitter, FaInstagram , FaYoutube} from 'react-icons/fa';
 // import { AiOutlineWhatsApp, AiFillPhone, AiFillMail } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className="pt-10 sm:mt-10 bg-gray-800">
+    <nav className="pt-10 sm:mt-10 bg-gray-800">
       <div className="max-w-6xl m-auto text-gray-500 flex flex-wrap justify-left">
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           <div className="text-xs uppercase text-gray-400 font-medium mb-6">
@@ -84,7 +84,7 @@ const Footer = () => {
 <p>© 2023 Standard Intern. All rights reserved.</p>
 </div>
 </div>
-</footer>
+</nav>
 );
 };
 
