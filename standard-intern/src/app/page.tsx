@@ -103,9 +103,9 @@ const Home = () => {
   <LoginButton/>
 </div>
 </div>
-<footer >
+
         <Footer/>
-       </footer>
+       
 </div>
 
 );
