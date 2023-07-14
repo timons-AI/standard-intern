@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 // import { FaFacebook, FaTwitter, FaInstagram , FaYoutube} from 'react-icons/fa';
 // import { AiOutlineWhatsApp, AiFillPhone, AiFillMail } from 'react-icons/ai';
